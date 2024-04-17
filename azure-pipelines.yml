@@ -31,6 +31,17 @@ steps:
       archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId)-$(python.version).zip
       replaceExistingArchive: true
 
+  - script: |
+      echo $(System.DefaultWorkingDirectory)
+      echo "-----"
+      echo $(Build.ArtifactStagingDirectory)
+      echo "-----"
+      ls $(System.DefaultWorkingDirectory)
+      echo "-----"
+      ls $(Build.ArtifactStagingDirectory)
+      echo "-----"
+    displayName: 'Path Locations'
+
   - task: PublishBuildArtifacts@1
     inputs:
       PathtoPublish: '$(Build.ArtifactStagingDirectory)'
