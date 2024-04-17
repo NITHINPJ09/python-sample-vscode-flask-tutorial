@@ -6,7 +6,7 @@
 trigger:
 - main
 
-pool: Linux
+pool: Default
 strategy:
   matrix:
     Python27:
