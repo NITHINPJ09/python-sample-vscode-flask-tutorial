@@ -6,8 +6,7 @@
 trigger:
 - main
 
-pool:
-  vmImage: Linux
+pool: Linux
 strategy:
   matrix:
     Python27:
