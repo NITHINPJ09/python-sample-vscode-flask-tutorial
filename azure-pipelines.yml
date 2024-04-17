@@ -6,7 +6,8 @@
 trigger:
 - main
 
-pool: Default
+pool: Ubuntu
+
 variables:
   python.version: '3.10'
   
