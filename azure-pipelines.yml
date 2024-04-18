@@ -6,7 +6,8 @@
 trigger:
 - main
 
-pool: Ubuntu
+pool:
+  vmImage: ubuntu-latest
 
 variables:
   python.version: '3.10'
